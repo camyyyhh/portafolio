@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* BARRA SUPERIOR */
+
 .top-bar {
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ body {
     text-decoration: none;
 }
 
-/* HERO (AZUL GRANDE) */
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -44,41 +44,116 @@ body {
     font-weight: normal;
 }
 
-/* CÍRCULO */
+
 .circle {
-    width: 140px;
-    height: 140px;
-    background: #d9d9d9;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
+
+    background-image: url("img/foto.jpg");
+    background-size: cover;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+
+    border: 5px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-/* SOBRE MI */
 .about {
-    padding: 50px 80px;
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .about h2 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .sub {
     text-align: center;
     color: gray;
+    margin-bottom: 40px;
 }
 
 .container {
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.text {
-    width: 60%;
+.text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
 }
 
 .datos {
     width: 30%;
     background: #f5f5f5;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+* HABILIDADES *
+.Habilidades {
+    padding: 50px 80px;
+}
+
+.Habilidades h2 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.Habilidades .sub {
+    text-align: center;
+    color: gray;
+    margin-bottom: 30px;
+}
+
+.contenido-habilidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.lista-habilidades {
+    width: 40%;
+}
+
+.lista-habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-habilidades li {
+    background: #f5f5f5;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* TABLA */
+.habilidades-tabla {
+    width: 50%;
+}
+
+.habilidades-tabla table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.habilidades-tabla th {
+    background: #2d3e50;
+    color: white;
+    padding: 10px;
+}
+
+.habilidades-tabla td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
 }
