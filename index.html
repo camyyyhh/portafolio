@@ -10,10 +10,10 @@
 <header class="top-bar">
     <div class="logo">CE</div>
     <nav>
-        <a href="#">Sobre mí</a>
-        <a href="#">Habilidades</a>
-        <a href="#">Proyectos</a>
-        <a href="#">Contacto</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
     </nav>
 </header>
 
@@ -30,7 +30,7 @@
     <div class="circle"></div>
 </section>
 
-<section class="about">
+<section class="about" id="sobre-mi">
     <h2>Sobre Mí</h2>
     <p class="sub">Conóceme un poco más</p>
 
@@ -63,39 +63,62 @@
     </div>
 </section>
 
-<section class="Habilidades">
+<section class="Habilidades" id="habilidades">
     <h2>Habilidades</h2>
     <p class="sub">Tecnologías y competencias</p>
 
     <div class="habilidades-tabla">
-        <table>
-            <tr>
-                <th>Tecnología</th>
-                <th>Nivel</th>
-                <th>Dominio</th>
-            </tr>
-            <tr>
-                <td>HTML</td>
-                <td>Básico</td>
-                <td>Alto</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Básico</td>
-                <td>Medio</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Aprendiendo</td>
-                <td>Básico</td>
-            </tr>
-            <tr>
-                <td>Git / GitHub</td>
-                <td>Intermedio</td>
-                <td>Básico</td>
-            </tr>
-        </table>
-    </div>
+    <table>
+        <tr>
+            <th>Tecnología</th>
+            <th>Nivel</th>
+            <th>Dominio</th>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>Básico</td>
+            <td>
+                <div class="barra">
+                    <div class="nivel alto"></div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>Básico</td>
+            <td>
+                <div class="barra">
+                    <div class="nivel medio"></div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>JavaScript</td>
+            <td>Aprendiendo</td>
+            <td>
+                <div class="barra">
+                    <div class="nivel bajo"></div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Git / GitHub</td>
+            <td>Intermedio</td>
+            <td>
+                <div class="barra">
+                    <div class="nivel bajo"></div>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+</div>
+        
+       
 
     <div class="contenido-habilidades">
         <div class="competencias-tecnicas">
@@ -120,7 +143,7 @@
     </div>
 </section>
 
-<section class="proyectos">
+<section class="proyectos" id="proyectos">
     <h2>Proyectos</h2>
     <p class="sub">Algunos de mis trabajos</p>
     <blockquote> Mis primeros proyectos estan aqui 
@@ -201,7 +224,7 @@
 </aside>
 </section>
 
-<section class="contacto">
+<section class="contacto" id="contacto">
     <h2>Contacto</h2>
     <p class="sub">Enviame un mensaje</p>
 
@@ -213,7 +236,13 @@
         <input type="email" placeholder="tu@email.com" required>
 
         <label>Asunto</label>
-        <input type="text" placeholder="Selecciona un asunto" required>
+        <select required>
+    <option value="">Selecciona un asunto</option>
+    <option>Consulta</option>
+    <option>Trabajo</option>
+    <option>Proyecto</option>
+    <option>Otro</option>
+</select>
 
         <label>Mensaje</label>
         <textarea placeholder="Escribe tu mensaje aqui" required></textarea>
