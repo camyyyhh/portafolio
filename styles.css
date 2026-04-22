@@ -204,7 +204,7 @@ body {
     padding: 20px;
     border-radius: 12px;
 
-    /* sombra rosada suave */
+
     box-shadow: 0 4px 15px rgba(255, 140, 160, 0.25);
 }
 
@@ -247,4 +247,123 @@ body {
 .ruta-aprendizaje li {
     margin-bottom: 10px;
     line-height: 1.5;
+}
+
+*seccion de proyectos * 
+
+
+.proyectos {
+    margin-top: 100px;
+    padding: 60px 80px;
+}
+
+.proyectos h2 {
+    text-align: center;
+    font-size: 42px;
+    color: #1f3b63;
+    margin-bottom: 15px;
+}
+
+.proyectos .sub {
+    text-align: center;
+    font-size: 22px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.proyectos blockquote {
+    text-align: center;
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 50px;
+    border: none;
+}
+
+.mis-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.proyecto {
+    width: 260px;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+*colores para los proyectos* 
+.proyecto:nth-child(1) {
+    background: #f3efff;
+}
+
+.proyecto:nth-child(2) {
+    background: #fff3f7;
+}
+
+.proyecto:nth-child(3) {
+    background: #eef8ff;
+}
+
+.proyecto:nth-child(4) {
+    background: #f2fff4;
+}
+
+.proyecto:nth-child(5) {
+    background: #fff8ee;
+}
+
+.proyecto:nth-child(6) {
+    background: #f9f1ff;
+}
+
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.proyecto figcaption {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f3b63;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.proyecto a {
+    display: inline-block;
+    color: #1f3b63;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+.proyectos aside {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #555;
+}
+
+*agrandar blockquote* 
+.proyectos blockquote {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 40px 0 60px;
+    color: #444;
+    width: 100%;
 }
